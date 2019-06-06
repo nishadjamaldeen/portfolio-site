@@ -1,0 +1,208 @@
+body, html{
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.fade-in-on-scroll{
+    opacity:0;
+}
+
+#navbarSupportedContent{
+    justify-content: flex-end;
+}
+
+.nav-item{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.major-bg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bridge.jpg");
+    height: 100%;
+    filter:blur(4px);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro {
+    height: 40%;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.subtitles{
+    padding: 70px 0px;
+    text-align: center;
+}
+
+.intro-h1{
+    font-family: 'Bevan', sans-serif;
+    /* opacity: 0%; */
+}
+
+.intro-h1 h1{
+    font-size: 4rem;
+}
+
+.intro-h1 p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cross-in h1{
+    -webkit-animation: crossIn 4s;
+    animation: crossIn 4s;
+}
+
+@keyframes crossIn{
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+@-webkit-keyframes crossIn{
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+.typewriter{
+    position: absolute;
+    width: min-content;
+}
+
+.typewriter h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    overflow: hidden;
+    border-right:.10em solid #7E6237;
+     white-space: nowrap; 
+    /* margin: 0 auto; */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 4s steps(60, end),
+        blink-caret .75s step-end 10;
+}
+
+@keyframes typing{
+    0% { width: 0 }
+    15% { width: 0 }
+    100% { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #7E6237; }
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 203px;
+  height: 219px;
+  border-radius: 50%;
+  filter:drop-shadow(8px 8px 10px gray); 
+  filter: opacity(80%)
+  /* filter:grayscale(70%); */
+}
+
+.projects{
+    height: 100%;
+}
+
+ .project-carousel-inside{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto !important;
+}
+
+
+.carousel-control-next-icon {
+  height: 40px;
+  width: 40px;
+  /* outline: black; */
+  margin-left:5em;
+  filter:invert(100%);
+  /* border-radius: 50%; */
+  /* border: 1px solid black; */
+  /* background-image: none;
+  color: #000; */
+
+}
+
+.carousel-control-prev-icon{
+  height: 40px;
+  width: 40px;
+  margin-right:5em;
+  filter:invert(100%);
+}
+
+
+.card-img-overlay{
+    visibility: hidden;
+} 
+
+.card:hover .card-img-top{
+    transform: scale(1.02);
+    opacity: 0.3;
+    background-color: #333
+}
+
+.card:hover .card-img-overlay div{
+    visibility: visible;
+}
+
+.card{
+    
+}
+
+.card img{
+    object-fit: cover;
+    height: 200px;
+    overflow: hidden;
+     transition: transform .5s ease; 
+} 
+
+ /* .card:hover, .card:focus {
+  transform: scale(1.02);
+  opacity:0.5;
+}
+
+.card:hover .card-img-overlay{
+    color:#730d0d;
+}
+
+ .card-img-overlay p{
+    visibility:hidden;
+}
+
+  
+
+.card:hover .card-img-overlay p{
+    font-size:1.5em;
+    letter-spacing:0.02em;
+}  */
+
+.carousel-indicators{
+    bottom:-50px !important;
+}
+
+.carousel-inner{
+    margin-bottom:50px;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #0000ff;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
